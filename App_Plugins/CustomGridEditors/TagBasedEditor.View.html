@@ -1,0 +1,13 @@
+﻿<div ng-controller="CustomGridEditors.TagBasedEditorController">
+    <div class="umb-editor-placeholder" ng-click="setTags()" >
+        <i class="icon icon-tag"></i>
+        <div ng-if="!control.value" class="help-text">Click to select tags</div>
+        <div ng-if="control.value" class="help-text">{{control.value.length}} tag(s) selected.</div>
+    </div>
+
+    <umb-overlay ng-if="tagsPickerOverlay.show"
+                 model="tagsPickerOverlay"
+                 view="tagsPickerOverlay.view"
+                 position="right">
+    </umb-overlay>
+</div>

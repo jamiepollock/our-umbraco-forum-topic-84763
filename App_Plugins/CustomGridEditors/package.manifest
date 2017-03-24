@@ -1,0 +1,34 @@
+{
+  "javascript": [
+    "/App_Plugins/CustomGridEditors/TagBasedDialog.Controller.js",
+    "/App_Plugins/CustomGridEditors/TagBasedEditor.Controller.js"
+  ],
+  "gridEditors": [
+    {
+      "name": "Tag Picker",
+      "alias": "tagPicker",
+      "view": "/App_Plugins/CustomGridEditors/TagBasedEditor.view.html",
+      "icon": "icon-tag",
+      "config": {}
+    },
+    // OPTIONAL: additional tag pickers with a tagGroup specified
+    {
+      "name": "News Tag Picker",
+      "alias": "newsTagPicker",
+      "view": "/App_Plugins/CustomGridEditors/TagBasedEditor.view.html",
+      "icon": "icon-tag",
+      "config": {
+        "tagGroup": "news"
+      }
+    },
+    {
+      "name": "Events Tag Picker",
+      "alias": "eventsTagPicker",
+      "view": "/App_Plugins/CustomGridEditors/TagBasedEditor.view.html",
+      "icon": "icon-tag",
+      "config": {
+        "tagGroup": "events"
+      }
+    }
+  ],
+}

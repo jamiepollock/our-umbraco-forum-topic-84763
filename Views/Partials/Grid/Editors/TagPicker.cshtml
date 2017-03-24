@@ -1,0 +1,11 @@
+﻿@model dynamic
+@if (Model.value != null)
+{
+    <h2>Selected Tags</h2>
+    <ul>
+        @foreach (var tag in Model.value)
+        {
+            <li>@tag.Text</li>
+        }
+    </ul>
+}

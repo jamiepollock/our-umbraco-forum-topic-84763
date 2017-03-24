@@ -1,0 +1,14 @@
+﻿<form novalidate name="selectTagsForm" ng-submit="submitForm()" ng-controller="CustomGridEditors.TagBasedDialogsController" val-form-manager>
+    <div class="umb-panel">
+        <div class="umb-panel-body no-header with-footer">
+            <umb-pane>
+                <umb-control-group label="Select Tags" ng-if="tags">
+                    <select multiple ng-model="model.value" ng-options="tag.Text for tag in tags track by tag.Id" prevent-default></select>
+                </umb-control-group>
+                <div ng-show="!tags || tags.length === 0">
+                    <p>No Tags found.</p>
+                </div>
+            </umb-pane>
+        </div>
+    </div>
+</form>
